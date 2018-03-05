@@ -1,5 +1,8 @@
-# SWOWAnalysis
-Import, preprocessing and basic analysis pipeline for Small World of Words data.
+# SWOWEN-2018
+Import, preprocessing, and basic analysis pipeline for the EnglishSmall World of Words project
+
+## Getting started
+
 
 ## File format
 Raw data is found under ./EN/raw
@@ -13,15 +16,7 @@ Raw data is found under ./EN/raw
 * RPOS: Response position (first response R1, second response R2, or third response R3)
 
 
-## Functions
+## Pipeline
 * `importdata`: import the raw data and convert to a graph
 * `similarityFunctions`: calculate distributional overlap measures
 * `assoWeightFunctions`: calculate associative strength measures
-
-## Analyses
-### Network analysis
-Calculate basic network statistics
-* Network diameter
-* Network average path length
-
-# SWOWEN-2018
