@@ -1,0 +1,97 @@
+original	correction
+africa	Africa
+bandanna	bandana
+berlin	Berlin
+Beyonce	Beyoncé
+billy	Billy
+bluejay	blue jay
+Boobs	boobs
+book-bag	bookbag
+cain	Cain
+canada	Canada
+celsius	Celsius
+cheddar	Cheddar
+christian	Christian
+colt	Colt
+crayola	Crayola
+dingdong	ding dong
+dracula	Dracula
+dvd	DVD
+dwarves	dwarfs
+einstein	Einstein
+aeon	eon
+euro	Euro
+eww	ew
+facebook	Facebook
+Fedora	fedora
+forrest	Forrest
+Great Brittain	Great Britain
+halloween	Halloween
+head & shoulders	head and shoulders
+heather	Heather
+Ho	ho
+hoover	Hoover
+Impish	impish
+In fact	in fact
+indians	Indians
+industrialise	industrialize
+Infuriate	infuriate
+Insemination	insemination
+Insider	insider
+Javelin	javelin
+joe	Joe
+john	John
+kleenex	Kleenex
+kung fu	Kung fu
+lee	Lee
+lego	Lego
+lightbulb	light bulb
+lightyear	light year
+litchi	lychee
+manmade	man-made
+mars	Mars
+miniscule	minuscule
+morse	Morse
+nazi	Nazi
+new york	New York
+Newt	newt
+newton	Newton
+out fox	outfox
+parmesan	Parmesan
+photoshop	Photoshop
+pilates	Pilates
+Police Officer	police officer
+reddit	Reddit
+savannah	Savannah
+Smaller	smaller
+sparky	Sparky
+superman	Superman
+tom	Tom
+tumblr	Tumblr
+tupperware	Tupperware
+valentine	Valentine
+vaseline	Vaseline
+velcro	Velcro
+Wondrous	wondrous
+zen	Zen
+orient	Orient
+rhode island	Rhode Island
+POO	poo
+Poo	poo
+xerox	Xerox
+i	I
+jack	Jack
+march	March
+roman	Roman
+god	God
+jello	Jell-O
+watt	Watt
+band aid	Band-Aid
+Superbowl	Super Bowl
+thanksgiving	Thanksgiving
+new year	New Year
+pass over	passover
+south pole	South Pole
+white house	White House
+Muppet	muppet
+bunk bed	bunkbed

@@ -8,7 +8,7 @@ Import, preprocessing, and basic analysis pipeline for the English [Small World 
 
 
 
-## Getting started
+## Obtaining the data
 In addition to the scripts, you will need to retrieve the word association data.
 These can be found on the Small World of Words [research page](https://smallworldofwords.org/project/research/). Choose the English data (the Dutch data still need to be updated to be used with an R pipeline).
 
