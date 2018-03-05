@@ -1,4 +1,6 @@
 # SWOWEN-2018
+![SWOW Logo](https://smallworldofwords.org/img/logos/SWOW_Tag_Wide.png)
+
 Import, preprocessing, and basic analysis pipeline for the English [Small World of Words project](https://smallworldofwords.org/project/)
 
 
