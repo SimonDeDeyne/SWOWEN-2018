@@ -64,5 +64,8 @@ Use `createCueStats.R` to calculate cue statistics. Only words that are part of 
 * `x.R2`: the number of missing R2 responses
 * `x.R3`: the number of missing R3 responses
 
+A histogram of the response coverage for R1 and R123 graphs can be obtained from the script `plotCoverage.R`. Vocabulary growth curves can be obtained with `plotVocabularyGrowth.R`.
 
 ### R1 - R2 response chaining
+Later responses can be affected by the previous response a participant gave. In general, this is quite rare, but for some cues this effect can be more pronounced. To investigate response chaining, we compare the conditional probabilities of the second response when preceeded with a mediated R1 response with conditional probabilities when R2 is not preceeded by this mediator. 
+An example of this analysis is available in `calculateR12ResponseChaining.R`.
