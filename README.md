@@ -15,12 +15,21 @@ Suggestions are always appreciated, and do not hesitate to get in touch if you a
 
 ## Obtaining the data
 In addition to the scripts, you will need to retrieve the word association data.
+Currently word association and participant data is available for 12,292 cues. The data consists of over 3 million reponses collected between 2011 and 2018. They are currently submitted for publication. Note that the final version is subject to change.
+
+To cite these data: 
+De Deyne, S., Navarro, D., Perfors, A., Brysbaert, M. & Storms, G. (2018). Measuring the associative structure of English: The “Small World of Words” norms for word association.*Manuscript submitted for publication*.
+
+
+
 
 Please note that data themselves are licensed under [Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License](http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US).
 **They cannot be redistributed or used for commercial purposes.**
 
 
 If you want to use these data for your own research, you can obtain them from the Small World of Words [research page](https://smallworldofwords.org/project/research/). Download the English data (the Dutch data still need to be updated to be used with an R pipeline) and put the in the `raw` or `processed` folder (depending on the file you got).
+
+
 
 
 **If you find any of this useful, please consider sharing the [word association study](https://smallworlofwords.org/).**
