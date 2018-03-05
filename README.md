@@ -6,6 +6,7 @@
 The [Small World of Words project](https://smallworldofwords.org/project/) (SWOW) project is a scientific project to map word meaning in various languages.
 In contrast to dictionaries, it focusses on the aspects of word meaning that are shared between people without imposing restrictions on what aspects of meaning should be considered.
 The methodology is based on a continued word association task, in which participants see a cue word and are asked to give three associated responses to this cue word.
+The current version includes over 3 million responses obtained from over 90,000 participants, for more than 12,000 cues. 
 
 
 In this repository you will find a basic analysis pipeline for the English SWOW project which allows you to import an preprocessing the data as well as compute some basic statistics.
@@ -91,6 +92,11 @@ An example of this analysis is available in `calculateR12ResponseChaining.R`.
 
 ## Spelling and lexica
 We tried to check the spelling of the most common responses (those occurring at least two times in the data), but it's quite likely that some corrections can be improved and some misspellings are missed. This is where git can make our lives a bit easier. If you find errors, please check the correction file and submit a pull request with additional or ammended corrections.
+
+Two files are of importance:
+* [EnglishProperNames.txt](https://github.com/SimonDeDeyne/SWOWEN-2018/blob/master/data/dictionaries/EnglishCustomDict.txt): List of proper names that should not be corrected when found as response
+* [EnglishCustomDict.txt](https://github.com/SimonDeDeyne/SWOWEN-2018/blob/master/data/dictionaries/EnglishCustomDict.txt) responses that are manually checked. The data in these files take priority over automated (and sometimes faulty) spell-checking. As such, exceptions that should not be touched can be easily included by given including the original response and a correction that is identical. The current file consists of over 11,000 corrections.
+
 
 The spelling list is merged with [SUBTLEX-US](https://www.ugent.be/pp/experimentele-psychologie/en/research/documents/subtlexus) and words from the [VARCON](https://github.com/en-wl/wordlist/tree/master/varcon) list to obtain an English lexicon file. This file is used check responses at the individual level and remove participants who provide predominantly non-English responses in the `preprocessData.R` script.
 
