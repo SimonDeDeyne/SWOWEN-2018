@@ -1,5 +1,5 @@
 # SWOWEN-2018
-Import, preprocessing, and basic analysis pipeline for the English Small World of Words project
+Import, preprocessing, and basic analysis pipeline for the English [Small World of Words project](https://smallworldofwords.org/project/)
 
 
 
@@ -9,8 +9,8 @@ In addition to the scripts, you will need to retrieve the word association data.
 These can be found on the Small World of Words [research page](https://smallworldofwords.org/project/research/). Choose the English data (the Dutch data still need to be updated to be used with an R pipeline).
 
 
-## File format
-Raw data is found under ./EN/raw
+## Data format
+The csv file consists of the following columns:
 * participantID: unique identifier for the participant
 * age: age of the participant
 * gender: gender of the participant (female / male / X)
