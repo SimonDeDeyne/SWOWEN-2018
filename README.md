@@ -26,7 +26,7 @@ To cite these data:
 De Deyne, S., Navarro, D., Perfors, A., Brysbaert, M. & Storms, G. (2018). Measuring the associative structure of English: The “Small World of Words” norms for word association.*Manuscript submitted for publication*.
 
 
-**If you find any of this useful, please consider sharing the [word association study](https://smallworlofwords.org/).**
+If you find any of this useful, please consider sharing the [word association study](https://smallworlofwords.org/).
 
 
 ## Participant data
