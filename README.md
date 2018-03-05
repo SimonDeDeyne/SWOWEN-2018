@@ -3,7 +3,12 @@
 
 
 # SWOWEN-2018
-Import, preprocessing, and basic analysis pipeline for the English [Small World of Words project](https://smallworldofwords.org/project/)
+The [Small World of Words project](https://smallworldofwords.org/project/) (SWOW) project is a scientific project to map word meaning in various languages.
+In contrast to dictionaries, it focusses on the aspects of word meaning that are shared between people without imposing restrictions on what aspects of meaning should be considered.
+The methodology is based on a continued word association task, in which participants see a cue word and are asked to give three associated responses to this cue word.
+
+
+In this repository you will find a basic analysis pipeline for the English SWOW project which allows you to import an preprocessing the data as well as compute some basic statistics.
 
 
 
