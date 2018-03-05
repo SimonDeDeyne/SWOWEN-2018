@@ -16,11 +16,11 @@ For a subset of the data, we also provided information about education (we only 
 * `participantID`: unique identifier for the participant
 * `created_at`: time and date of participation
 * `age`: age of the participant
-* `nativeLanguage`: native language (from dropdown menu)
+* `nativeLanguage`: native language from a short list of common languages
 * `gender`: gender of the participant (Female / Male / X)
-* `education`: native language (from dropdown menu)
-* `city`: native language (from dropdown menu)
-* `country`: native language (from dropdown menu)
+* `education`: Highest level of education:  1 = None, 2 = Elementary school, 3 = High School, 4 = College or University Bachelor, 5 = College or University Master
+* `city`: city (city location when tested, might be an approximation)
+* `country`: country (countr location when tested)
 
 
 
@@ -51,3 +51,8 @@ Use `createSWOWENGraph.R` to extract the largest strongly connected component  f
 In most cases, associative frequencies will need to be converted to associative strengths by dividing with the sum of all strengths for a particular cue.
 Vertices that are not part of the largest connected component are listed in a report in the `output/reports` subdirectory.
 
+
+## Derived statistics
+### Response statistics
+### Cue statistics
+### R1 - R2 response chaining
