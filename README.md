@@ -69,3 +69,9 @@ A histogram of the response coverage for R1 and R123 graphs can be obtained from
 ### R1 - R2 response chaining
 Later responses can be affected by the previous response a participant gave. In general, this is quite rare, but for some cues this effect can be more pronounced. To investigate response chaining, we compare the conditional probabilities of the second response when preceeded with a mediated R1 response with conditional probabilities when R2 is not preceeded by this mediator. 
 An example of this analysis is available in `calculateR12ResponseChaining.R`.
+
+## Spelling and lexica
+We tried to check the spelling of the most common responses (those occurring at least two times in the data), but it's quite likely that some corrections can be improved and some misspellings are missed. This is where git can make our lives a bit easier. If you find errors, please check the correction file and submit a pull request with additional or ammended corrections.
+
+The spelling list is merged with SUBTLEX-US and words from the VARCON list to obtain an English lexicon file. This file is used check responses at the individual level and remove participants who provide predominantly non-English responses in the `preprocessData.R` script.
+
