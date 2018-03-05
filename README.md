@@ -1,7 +1,12 @@
 # SWOWEN-2018
-Import, preprocessing, and basic analysis pipeline for the EnglishSmall World of Words project
+Import, preprocessing, and basic analysis pipeline for the English Small World of Words project
+
+
+
 
 ## Getting started
+In addition to the scripts, you will need to retrieve the word association data.
+These can be found on the Small World of Words [research page](https://smallworldofwords.org/project/research/). Choose the English data (the Dutch data still need to be updated to be used with an R pipeline).
 
 
 ## File format
