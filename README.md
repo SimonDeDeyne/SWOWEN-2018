@@ -23,7 +23,7 @@ Please note that data themselves are licensed under [Creative Commons Attributio
 If you want to use these data for your own research, you can obtain them from the Small World of Words [research page](https://smallworldofwords.org/project/research/). Download the English data (the Dutch data still need to be updated to be used with an R pipeline) and put the in the `raw` or `processed` folder (depending on the file you got).
 
 
-**If you find any of this useful, please consider sharing the [word association study](https://smallworlofwords.org/). **
+**If you find any of this useful, please consider sharing the [word association study](https://smallworlofwords.org/).**
 
 
 
