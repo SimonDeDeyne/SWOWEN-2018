@@ -20,7 +20,7 @@ For a subset of the data, we also provided information about education (we only 
 * `gender`: gender of the participant (Female / Male / X)
 * `education`: Highest level of education:  1 = None, 2 = Elementary school, 3 = High School, 4 = College or University Bachelor, 5 = College or University Master
 * `city`: city (city location when tested, might be an approximation)
-* `country`: country (countr location when tested)
+* `country`: country (country location when tested)
 
 
 
@@ -73,5 +73,5 @@ An example of this analysis is available in `calculateR12ResponseChaining.R`.
 ## Spelling and lexica
 We tried to check the spelling of the most common responses (those occurring at least two times in the data), but it's quite likely that some corrections can be improved and some misspellings are missed. This is where git can make our lives a bit easier. If you find errors, please check the correction file and submit a pull request with additional or ammended corrections.
 
-The spelling list is merged with SUBTLEX-US and words from the VARCON list to obtain an English lexicon file. This file is used check responses at the individual level and remove participants who provide predominantly non-English responses in the `preprocessData.R` script.
+The spelling list is merged with [SUBTLEX-US](https://www.ugent.be/pp/experimentele-psychologie/en/research/documents/subtlexus) and words from the [VARCON](https://github.com/en-wl/wordlist/tree/master/varcon) list to obtain an English lexicon file. This file is used check responses at the individual level and remove participants who provide predominantly non-English responses in the `preprocessData.R` script.
 
