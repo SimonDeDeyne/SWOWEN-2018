@@ -54,5 +54,15 @@ Vertices that are not part of the largest connected component are listed in a re
 
 ## Derived statistics
 ### Response statistics
+Use `createResponseStats.R` to calculate a number of response statistics. Currently the script calculates the number of types, tokens and hapax legomena responses (responses that only occur once). The results can be found in the `output` directory.
 ### Cue statistics
+Use `createCueStats.R` to calculate cue statistics. Only words that are part of the strongly connected component are considered. Results are provided for the R1 graph and the graph with all responses (R123). The file includes the following:
+
+* `coverage`: (how many of the responses are retained in the graph after removing those words that aren't a cue or aren't part of the strongest largest component).
+* `H`: Shannon entropy of response distributions for each cue
+* `unknown`: the number of unknown responses
+* `x.R2`: the number of missing R2 responses
+* `x.R3`: the number of missing R3 responses
+
+
 ### R1 - R2 response chaining
