@@ -19,6 +19,9 @@ source('./R/preprocessData.R')
 # to avoid inflating the counts
 source('./R/createResponseStats.R')
 
+# Create cue- response associative strength table (optional)
+source('./R/createAssoStrengthTable.R')
+
 # Create the SWOWEN graph which will inform us on the strongly connected
 # component, which will be considered when calculating cue stats coverage
 source('./R/createSWOWENGraph.R')

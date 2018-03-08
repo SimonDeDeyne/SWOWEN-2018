@@ -65,6 +65,8 @@ The preprocessed data consist of normalizations of cues and responses by spell-c
 
 In addition to normalizing cues and responses, this script will also extract a balanced dataset, in which each cue is judged by exactly 100 participants. Because each participant generated three responses, this means each cue has 300 associations. The participants were selected to favor native speakers.
 
+In many cases, this preprocessed data is used to derive the associative strengths (i.e. the conditional probability of a response given a cue). These data can be derived using the [createAssoStrengthTable.R](https://github.com/SimonDeDeyne/SWOWEN-2018/blob/master/R/createAssoStrengthTable.R) script. 
+
 
 ## Graphs
 Use [createSWOWENGraph.R](https://github.com/SimonDeDeyne/SWOWEN-2018/blob/master/R/createSWOWENGraph.R) to extract the largest strongly connected component  for graphs based on the first response (R1) or all responses (R123). The results are written to [output/adjacencyMatrices](https://github.com/SimonDeDeyne/SWOWEN-2018/blob/master/output/adjacencyMatrices) and consist of a file with labels and a sparse file consisting of three values corresponding to row- and column-indices followed by the association frequencies.
