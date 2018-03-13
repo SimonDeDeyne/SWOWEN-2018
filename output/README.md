@@ -2,9 +2,13 @@
 
 ## responseStats.SWOW-EN.csv
 *Response*: the spelling-corrected Americanized response
+
 *Freq.R1*: the number of occurrences of all first (R1) responses summed over all cues 
+
 *Types.R1*: the number of unique cues for which the first (R1) response is generated
+
 *Freq.R123*: the number of occurrences of all first, second and third (R123) responses summed over all cues 
+
 *Types.R123*: the number of unique cues for which the responses (R123) is generated
 
 ## cueStats.SWOW-EN.R1.csv
