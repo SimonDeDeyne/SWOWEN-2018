@@ -18,12 +18,17 @@ All cue statistics are based on exactly 100 R1 responses given for each individu
 
 *Coverage*: Percentage of responses that are retained in the unimodal cue x cue graph. This number reflects the loss of 
 data when responses that do not appear as a cue are removed. It thus reflects the degree of censoring for a particular cue
+
 *H*: Shannon entropy for the response distribution of a particular cue.
+
 *Unknown*: number of times a word was indicated as unknown (out of 100)
+
 *N*: the total number of responses
 
 ## cueStats.SWOW-EN.R123.csv
 Similar to above, except that all metrics are calculated over R123 (i.e. exactly 300 responses per cue).
 More cues are included in this file as the one above reflecting slight differences in the size of the connected component.
+
 *xR2*: The number of times no R2 or R3 were given. Participants indicated this by pressing a "No more responses" button. This can be taken as an indication of the depth of knowledge for this cue.
+
 *xR3*: The number of times no R3 were given. The interpretation is similar as above.
