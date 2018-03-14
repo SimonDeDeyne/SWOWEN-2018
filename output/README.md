@@ -1,5 +1,6 @@
 ## Short explanation about the measures included in the summary files
-The following files are generated from [createResponseStats.R](https://github.com/SimonDeDeyne/SWOWEN-2018/blob/master/R/createResponseStats.R) and [createCueStats.R](https://github.com/SimonDeDeyne/SWOWEN-2018/blob/master/R/createCueStats.R).
+The following files are generated from [createResponseStats.R](https://github.com/SimonDeDeyne/SWOWEN-2018/blob/master/R/createResponseStats.R), [createCueStats.R](https://github.com/SimonDeDeyne/SWOWEN-2018/blob/master/R/createCueStats.R) and
+[calculateR12ResponseChaining.R](https://github.com/SimonDeDeyne/SWOWEN-2018/blob/master/R/calculateR12ResponseChaining.R)
 
 ### responseStats.SWOW-EN.csv
 *Response*: the spelling-corrected Americanized response
@@ -34,7 +35,7 @@ More cues are included in this file as the one above reflecting slight differenc
 
 *xR3*: The number of times no R3 were given. The interpretation is similar as above.
 
-### calculateR12ResponseChaining.R
+### responseChainingBF.SWOW-EN.R12.csv
 Effect of chaining of the first response (R1) on the second response (R2) in a continued word association task.
 It contains the cells of the contingency table for all combinations of R2s preceeded by R1 for a specific cue and a Bayes Factor 
 which indicates the presence/absence of chaining. A simple example can be found in the submitted manuscript.
