@@ -49,7 +49,7 @@ X.R123            = importDataSWOW(dataFile,response)
 # Extract unimodal graph (strong component)
 G.R123            = createGraph(X.R123)
 compResults.R123  = extractComponent(G.R123,'strong')
-G.R123.strong     = compResults.R1$subGraph
+G.R123.strong     = compResults.R123$subGraph
 results$R123$removeVertices = compResults.R123$removedVertices
 results$R123$maxSize = compResults.R123$maxSize
 

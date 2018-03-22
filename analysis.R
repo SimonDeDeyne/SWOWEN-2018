@@ -24,7 +24,7 @@ source('./R/createAssoStrengthTable.R')
 
 # Create the SWOWEN graph which will inform us on the strongly connected
 # component, which will be considered when calculating cue stats coverage
-source('./R/createSWOWENGraph.R')
+source('./R/createSWOWGraph.R')
 
 # Create datafiles with cue statistics (# responses, unknown, missing, H)
 source('./R/createCueStats.R')

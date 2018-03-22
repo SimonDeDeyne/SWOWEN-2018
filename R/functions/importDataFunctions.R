@@ -1,6 +1,6 @@
 
 # mulitiple relplacement function
-source('./R/functions/mgsub.R')
+#source('./R/functions/mgsub.R')
 
 # Convert to long format and translate British to American or remove British ones if American exists
 importDataSWOW <- function(dataFile,response) {
