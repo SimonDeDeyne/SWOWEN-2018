@@ -14,7 +14,7 @@ The use of spreading activation also depends on the density of the original grap
 
 ### R implementation
 
-The script [graphRandomWalk.R](graphRandomWalk.R) provides an example starting from the [SWOW-EN.R100.csv](SWOW-EN.R100.csv) generated data after preprocessing by the [preprocessData](preprocessData.R) script. 
+The script [graphRandomWalk.R](graphRandomWalk.R) provides an example starting from the [SWOW-EN.R100.csv](../../data/processed/SWOW-EN.R100.csv) generated data after preprocessing by the [preprocessData](preprocessData.R) script. 
 
 The function weightMatrix from [similarityFunctions.R](similarityFunctions.R) will derive a cue x cue weighted adjacency matrix from the cue x response matrix using the largest strongest component.
 
