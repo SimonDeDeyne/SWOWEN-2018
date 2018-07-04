@@ -95,3 +95,4 @@ south pole	South Pole
 white house	White House
 Muppet	muppet
 bunk bed	bunkbed
+Inflamed	inflamed
