@@ -146,7 +146,7 @@ X_wide    = X %>%  select(id,participantID,age,gender,nativeLanguage,country,edu
 
 # Add a selection variable to favor native speakers
 X_wide    = X_wide %>% mutate(Native = ifelse(nativeLanguage == 'United States', 3,
-                                    ifelse(nativeLanguage %in% c('Canada','Australia','New Zealand','Jamaica','Puerto Rico'),2,
+                                    ifelse(nativeLanguage %in% c('Canada','Australia','New Zealand','Jamaica','Puerto Rico','South Africa'),2,
                                     ifelse(nativeLanguage %in% c('Ireland','United Kingdom'), 1,0)))) %>%
                                   arrange(participantID)
 
