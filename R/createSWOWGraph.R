@@ -11,7 +11,7 @@
 #
 # Note: the data included with this script cannot be distributed without prior consent
 # Author: Simon De Deyne simon2d@gmail.com
-# Last changed: 20 February 2018
+# Last changed: 5 July 2018
 
 source('settings.R')
 require(igraph)
@@ -61,3 +61,5 @@ writeAdjacency(G.R123.strong, paste(output.file,response,sep=''))
 # Write a summary of the output to an rds file
 saveRDS(results,report.file,ascii=TRUE)
 
+# Clean up
+rm(list = ls())

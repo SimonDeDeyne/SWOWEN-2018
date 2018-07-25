@@ -11,7 +11,7 @@
 # In this script, we also prioritise native speakers if sufficient data is available for a specific cue.
 #
 # Author: Simon De Deyne, simon2d@gmail.com
-# Last changed 5 March, 2018
+# Last changed 9 July, 2018
 
 results      = list()
 
@@ -94,7 +94,7 @@ PP              = PP %>% mutate(Status = ifelse(Prop.X >  criteria.X, 'X',
 
 
 ## Calculate the breakdown of valid and removed participants
-results$pp$N     = dim(PP)[1]
+results$pp$N                    = dim(PP)[1]
 results$pp$N.invalid.X          = sum(PP$Prop.X > criteria.X)
 results$pp$N.invalid.nonnative  = sum(PP$Prop.English < criteria.English, na.rm = TRUE)
 results$pp$N.invalid.persever   = sum(PP$Prop.Repeat > criteria.Repeat, na.rm  = TRUE)
@@ -125,7 +125,7 @@ results$pp$N.education = PP %>% group_by(education) %>% summarise(Freq = n())
 # Percentage removed
 nPP         = PP %>% group_by(Status) %>% summarise(Freq = n())
 results$pp$N.invalid = round(100 * nPP %>% filter(!Status=='Valid') %>% summarise(Freq = sum(Freq)))
-
+results$pp$N.valid = PP %>% filter(Status=='Valid') %>% nrow()
 
 # Remove from data
 X           = X %>% filter(participantID %in% PP$participantID[PP$Status=='Valid'])
@@ -171,6 +171,7 @@ results$responses$N.valid = X_wide %>% nrow() * 3
 results$responses$N.set100 = X_set %>% nrow() * 3
 results$responses$N.valid - results$responses$N.set100
 results$pp$N.set100  = X_set %>% group_by(participantID) %>% summarise(n_distinct(participantID)) %>% nrow()
+
 
 # Write the dataset with 100 responses per cue
 write.csv(X_set,output.file)

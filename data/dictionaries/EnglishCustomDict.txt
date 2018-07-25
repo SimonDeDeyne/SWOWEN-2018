@@ -940,7 +940,7 @@ bambie	Bambi
 Bamby	Bambi
 banannas	bananas
 the band	band
-band aid	Band-aid
+band-aid	Band-Aid
 band aid	Band-Aid
 Band Aid	Band-Aid
 bandaid	Band-Aid
@@ -1880,7 +1880,6 @@ combust	combust
 conbust	combust
 combusion	combustion
 comback	comeback
-come back	comeback
 commedic	comedic
 comfotable	comfortable
 confortable	comfortable
@@ -3654,6 +3653,8 @@ gizmo	gizmo
 Gizmo	gizmo
 glamourous	glamorous
 glamour	glamour
+glamor	glamour
+Glamor	glamour
 Glamour	glamour
 glenn	Glenn
 globa;	global
@@ -3906,6 +3907,7 @@ hardwork	hard work
 hardworker	hard worker
 hard core	hardcore
 hard working	hardworking
+hard-working	hardworking
 hare Krishna	Hare Krishna
 harley	Harley
 Harry potter	Harry Potter
@@ -4561,6 +4563,7 @@ jeeves	Jeeves
 Jeff bridges	Jeff Bridges
 jehovah's witness	Jehovah's witness
 jello	Jell-O
+jell-o	Jell-O
 jelly beans	Jelly Beans
 jelly fish	jellyfish
 jenga	Jenga
@@ -5151,7 +5154,8 @@ mkea	make
 maker's mark	Maker’s Mark
 makse	makes
 mkaes	makes
-make up	makeup
+make-up	makeup
+Bandied	Band-Aid
 amking	making
 mkaing	making
 malcolm	Malcolm
@@ -6472,7 +6476,6 @@ piaget	Piaget
 picachu	Picachu
 pick-axe	pick ax
 pick ax	pickax
-pick up	pickup
 peice	piece
 pi gout	pig out
 pikachoo	Pikachoo
@@ -6906,7 +6909,11 @@ pythagoras	Pythagoras
 pythagorean	Pythagorean
 q tip	Q-tip
 q tip	Q-Tip
-q tips	Q-tips
+Q tip	Q-Tip
+Q-tip	Q-Tip
+qtip	Q-Tip
+q tips	Q-Tips
+Q-tips	Q-Tips
 q.e.d	Q.E.D.
 q.e.d.	Q.E.D.
 qi	QI
@@ -9927,7 +9934,8 @@ ramsey	Ramsey
 ramses	Ramses
 rama	Rama
 ralph's	Ralph's
-rainforst	rain forest
+rainforst	rainforest
+rain forest	rainforest
 rainboots	rain boots
 rafael	Rafael
 radioative	radioactive
@@ -10424,7 +10432,9 @@ hendricks	Hendricks
 hemmeroids	hemorrhoids
 hemorioids	hemorrhoids
 heartrate	heart rate
-healtcare	health care
+healtcare	healthcare
+healthcare	healthcare
+health care	healthcare
 headlice	head lice
 hazlenuts	hazelnuts
 hayfeaver	hay fever
@@ -11004,3 +11014,9 @@ Wank	wank
 ,ore then one	more than one
 ,onitor	monitor
 .ightbulb	light bulb
+Leprechaun	leprechaun
+good looking	good-looking
+goodlooking	good-looking
+cornfield	cornfield
+ID	ID
+coke	coke

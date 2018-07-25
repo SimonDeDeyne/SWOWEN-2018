@@ -4,7 +4,7 @@
 # Save the summary statistics to be included in later report.
 #
 # Author: Simon De Deyne simon2d@gmail.com
-# Date: 4 March 2018
+# Date: 5 July 2018
 
 source('settings.R')
 results = list()
@@ -18,6 +18,11 @@ report.file         = './output/reports/responseStats.SWOW-EN.rds'
 # Response frequencies for SWOW-EN R123
 response            = 'R123'
 SWOWEN              = importDataSWOW(data.file,response)
+
+# Calculate unknown and missing results
+results$unknown   = SWOWEN %>% filter(RPOS == 'R1',is.na(response)) %>% nrow() / (SWOWEN %>% nrow()/3) * 100
+results$missing.R2 = SWOWEN %>% filter(RPOS == 'R2',is.na(response)) %>% nrow() / (SWOWEN %>% nrow()/2) * 100
+results$missing.R3 = SWOWEN %>% filter(RPOS == 'R3',is.na(response)) %>% nrow() / (SWOWEN %>% nrow()) * 200
 
 SWOWEN              = SWOWEN %>% filter(complete.cases(response))
 Freq.SWOW.R123      = SWOWEN %>%
@@ -86,7 +91,8 @@ write.csv(Freq.SWOW,output.file)
 # Write a summary of the output to an rds file
 saveRDS(results,report.file,ascii=TRUE)
 
-
+# Clean up
+rm(list = ls())
 
 
 

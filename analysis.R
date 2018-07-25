@@ -2,8 +2,9 @@
 # Author: Simon De Deyne (simon2d@gmail.com)
 #
 # Each file is self-contained, but the entire pipeline can be executed here
+# Make sure the working directory is set to this file's directory
 #
-# Last changed: 5 March 2018
+# Last changed: 25 July 2018
 
 # Settings
 source('settings.R')
@@ -22,14 +23,14 @@ source('./R/createResponseStats.R')
 # Create cue- response associative strength table (optional)
 source('./R/createAssoStrengthTable.R')
 
+# Create datafiles with cue statistics (# responses, unknown, missing, H)
+source('./R/createCueStats.R')
+
 # Create the SWOWEN graph which will inform us on the strongly connected
 # component, which will be considered when calculating cue stats coverage
 source('./R/createSWOWGraph.R')
 
-# Create datafiles with cue statistics (# responses, unknown, missing, H)
-source('./R/createCueStats.R')
-
-# Generate coverage plot
+# Generate coverage plot for the strongest connected components of G_R1 and G_R123
 source('./R/plotCoverage.R')
 
 # Generate vocabulary growth plot by fitting a Zipf Mandbrot model
@@ -38,4 +39,3 @@ source('./R/plotVocabularyGrowth.R')
 
 # Predict chaining (warning: slow)
 source('./R/calculateR12ResponseChaining.R')
-

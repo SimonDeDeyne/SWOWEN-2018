@@ -1582,7 +1582,6 @@ Chalon
 Chalumeau
 Chama
 Chamberlain
-Champagne
 Champaign
 Chan
 Chancing
@@ -1875,7 +1874,6 @@ Comdr
 Comfits
 Comique
 Comitia
-Commons
 Comte
 Conan
 Conan Doyle
@@ -2562,7 +2560,6 @@ Dz
 E = mc2
 E.R.
 E.T.
-Earth
 East Coast
 Easter
 Eastern Europe
@@ -3410,7 +3407,6 @@ Greenland
 Greenleaf
 Greenly
 Greenpeace
-Greens
 Greenwich
 Greenwood
 Greer
@@ -6348,7 +6344,6 @@ Pipper
 Pippi Longstocking
 Pippin
 Pirates of the Caribbean
-Pirates of the Carribean
 Pisa
 Pisces
 Pitman
@@ -9017,3 +9012,7 @@ The Doors
 Neopets
 New York
 Coke
+Band-Aid
+Jell-O
+Leprechaun
+Q-tips

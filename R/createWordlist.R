@@ -1,8 +1,6 @@
 # Create a word list from spelling corrections, SUBTLEX and VARCON project
 # Custom corrections are included as well as a custom list with proper nouns and acronyms
 
-rm(list = ls())
-
 # Word list with SUBTLEX (min freq = 2) and VARCON
 varcon.file     = './dictionaries/SUBTLEXFreqMIN2VARCON.txt'
 
@@ -27,3 +25,4 @@ X               = bind_rows(X.varcon,X.proper,X.spelling) %>% distinct() %>% arr
 
 write.csv(X,output.file,fileEncoding = 'UTF-8',row.names = FALSE)
 
+rm(varcon.file,proper.file,spelling.file,output.file,X.proper,X.spelling,X.varcon,X)

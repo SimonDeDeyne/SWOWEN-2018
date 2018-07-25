@@ -1,5 +1,8 @@
 original	correction
+aeon	eon
 africa	Africa
+band aid	Band-Aid
+band-aid	Band-Aid
 bandanna	bandana
 berlin	Berlin
 Beyonce	Beyoncé
@@ -7,11 +10,13 @@ billy	Billy
 bluejay	blue jay
 Boobs	boobs
 book-bag	bookbag
+bunk bed	bunkbed
 cain	Cain
 canada	Canada
 celsius	Celsius
 cheddar	Cheddar
 christian	Christian
+co-worker	coworker
 colt	Colt
 crayola	Crayola
 dingdong	ding dong
@@ -19,26 +24,35 @@ dracula	Dracula
 dvd	DVD
 dwarves	dwarfs
 einstein	Einstein
-aeon	eon
 euro	Euro
 eww	ew
 facebook	Facebook
 Fedora	fedora
 forrest	Forrest
+Frisbee	frisbee
+god	God
+good looking	good-looking
+goodlooking	good-looking
 Great Brittain	Great Britain
 halloween	Halloween
+hard working	hardworking
+hard-working	hardworking
 head & shoulders	head and shoulders
 heather	Heather
 Ho	ho
 hoover	Hoover
 Impish	impish
+pilates	Pilates
 In fact	in fact
 indians	Indians
 industrialise	industrialize
+Inflamed	inflamed
 Infuriate	infuriate
 Insemination	insemination
 Insider	insider
+jack	Jack
 Javelin	javelin
+jello	Jell-O
 joe	Joe
 john	John
 kleenex	Kleenex
@@ -48,51 +62,45 @@ lego	Lego
 lightbulb	light bulb
 lightyear	light year
 litchi	lychee
+make-up	makeup
 manmade	man-made
+march	March
 mars	Mars
 miniscule	minuscule
 morse	Morse
+Muppet	muppet
 nazi	Nazi
+new year	New Year
 new york	New York
 Newt	newt
 newton	Newton
+orient	Orient
 out fox	outfox
 parmesan	Parmesan
+pass over	passover
 photoshop	Photoshop
-pilates	Pilates
 Police Officer	police officer
+POO	poo
+Poo	poo
 reddit	Reddit
+rhode island	Rhode Island
+roman	Roman
 savannah	Savannah
 Smaller	smaller
+south pole	South Pole
 sparky	Sparky
+q-tips	Q-Tips
+Superbowl	Super Bowl
 superman	Superman
+thanksgiving	Thanksgiving
 tom	Tom
 tumblr	Tumblr
 tupperware	Tupperware
 valentine	Valentine
 vaseline	Vaseline
 velcro	Velcro
-Wondrous	wondrous
-zen	Zen
-orient	Orient
-rhode island	Rhode Island
-POO	poo
-Poo	poo
-xerox	Xerox
-i	I
-jack	Jack
-march	March
-roman	Roman
-god	God
-jello	Jell-O
 watt	Watt
-band aid	Band-Aid
-Superbowl	Super Bowl
-thanksgiving	Thanksgiving
-new year	New Year
-pass over	passover
-south pole	South Pole
 white house	White House
-Muppet	muppet
-bunk bed	bunkbed
-Inflamed	inflamed
+Wondrous	wondrous
+xerox	Xerox
+zen	Zen

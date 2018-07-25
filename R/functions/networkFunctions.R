@@ -113,6 +113,6 @@ writeAdjacency = function(G,dataset){
   labs                = igraph::V(G)$name
   rc                  = as_edgelist(G,names=F)
   df                  = cbind(rc,E(G)$weight)
-  write.table(df,file = paste(dataset,'_adj.tsv',sep=''),sep = '\t',row.names = F,col.names = F)
-  write.table(labs,file = paste(dataset,'_labels.txt',sep=''),sep = '\t',row.names = F,col.names = F, quote = F)
+  write.table(df,file = paste(dataset,'.adj.tsv',sep=''),sep = '\t',row.names = F,col.names = F)
+  write.table(labs,file = paste(dataset,'.labels.txt',sep=''),sep = '\t',row.names = F,col.names = F, quote = F)
 }

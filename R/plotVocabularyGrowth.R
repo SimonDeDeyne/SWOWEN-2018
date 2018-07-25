@@ -43,7 +43,8 @@ X.R123$response   = X.R123$response[sample(nrow(X.R123))]
 R123.F        = X.R123 %>%  group_by(response) %>% summarise(Freq = n()) %>% group_by(Freq) %>% summarise(FF = n())
 R123.spc      = spc(Vm = R123.F$FF,m=R123.F$Freq)
 
-R123.fzm      = lnre("fzm", R123.spc, exact = TRUE,verbose = TRUE,m.max=11)
+# Settings might need to be changed if estimation fails (for example m.max)
+R123.fzm      = lnre("fzm", R123.spc, debug=FALSE,exact = TRUE,verbose = TRUE,m.max=9)
 R123.fzm.spc  = lnre.spc(R123.fzm, N(R123.fzm))
 summary(R123.fzm)
 

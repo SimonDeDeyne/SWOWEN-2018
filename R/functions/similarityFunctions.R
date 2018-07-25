@@ -5,7 +5,7 @@ weightMatrix = function(X,weight,alpha){
   G     = comp$subGraph
   P     = as_adjacency_matrix(G,attr='weight',names = TRUE)
   P     = normalize(P,'l1')
-  
+
   switch(weight,
          strength = {
            #message('calculating strength')
@@ -24,7 +24,7 @@ weightMatrix = function(X,weight,alpha){
            P     = normalize(P,'l1')
          }
   )
-  
+
   return(P)
 }
 
@@ -33,17 +33,17 @@ weightMatrix = function(X,weight,alpha){
 # taken from https://github.com/dselivanov/text2vec/blob/master/R/utils_matrix.R
 normalize = function(m, norm = c("l1", "l2", "none")) {
   norm = match.arg(norm)
-  
+
   if (norm == "none")
     return(m)
-  
+
   norm_vec = switch(norm,
                     l1 = 1 / rowSums(m),
                     l2 = 1 / sqrt(rowSums(m ^ 2))
   )
   # case when sum row elements == 0
   norm_vec[is.infinite(norm_vec)] = 0
-  
+
   if(inherits(m, "sparseMatrix"))
     Diagonal(x = norm_vec) %*% m
   else
@@ -86,5 +86,49 @@ cosineMatrix = function(G){
 cosineRows = function(a,b){
   s = (a/norm(as.matrix(a),type = 'f')) %*% (b/norm(as.matrix(b),type = 'f'))
   return(s)
+}
+
+constructSimilarityMatrix = function(X,weight,alpha){
+  G     = createGraph(X)
+  comp  = extractComponent(G,'strong')
+  G     = comp$subGraph
+  P     = as_adjacency_matrix(G,attr='weight',names = TRUE)
+  P     = normalize(P,'l1')
+
+  switch(weight,
+         strength = {
+           #message('calculating strength')
+         },
+         PPMI = {
+           #message('calculating PPMI')
+           P     = PPMI(P)
+           P     = normalize(P,'l1')
+         },
+         RW   = {
+           #message('calculating RW')
+           P     = PPMI(P)
+           P     = normalize(P,'l1')
+           P     = katzWalk(P,alpha)
+           P     = PPMI(P)
+           P     = normalize(P,'l1')
+         }
+  )
+
+  S     = cosineMatrix(P)
+  return(S)
+}
+
+lookupSimilarityMatrix = function(S,X){
+  v = rep(NaN,dim(X)[1])
+  labels = dimnames(S)[[1]]
+
+  for( i in 1:dim(X)[1]) {
+    w_a = X$WordA[i]
+    w_b = X$WordB[i]
+    if(w_a %in% labels && w_b %in% labels){
+      v[i] =  S[w_a,w_b]
+    }
+  }
+  return(v)
 }
 
