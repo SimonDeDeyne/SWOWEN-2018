@@ -24,7 +24,12 @@ summaryFile     = './output/responseR12ChainingSummary.csv'
 response        = 'R123'
 X               = importDataSWOW(dataFile,response)
 X               = X %>% filter(complete.cases(response),RPOS %in% c('R1','R2')) %>% select(participantID,cue,response,RPOS)
-X               = spread(X,RPOS,response)
+
+# co-worker and coworker lead to identical responses for 1 pp who happened to have
+# been presented these results. Remove
+X = X[-c(324232,1507272), ]
+X = spread(X,RPOS,response)
+
 
 
 # Iterate over each cue to obtain BF
