@@ -11,16 +11,22 @@
 # In this script, we also prioritise native speakers if sufficient data is available for a specific cue.
 #
 # Author: Simon De Deyne, simon2d@gmail.com
-# Last changed 9 July, 2018
+# Last changed 13 June, 2019
+
+library('stringr')
+library('tidyverse')
+
+# Settings
+source('settings.R')
 
 results      = list()
 
 # Import the raw dataset
-data.file    = './data/raw/SWOW-EN.complete.csv'
-output.file  = './data/processed/SWOW-EN.R100.csv'
+data.file    = './data/2018/raw/SWOW-EN.complete.csv'
+output.file  = './data/2018/processed/SWOW-EN.R100.csv'
 lexicon.file = './data/dictionaries/wordlist.txt'
 cueCorrections.file = './data/dictionaries/cueCorrections.txt'
-report.file  = './output/reports/preprocessing.SWOW-EN.rds'
+report.file  = './output/2018/reports/preprocessing.SWOW-EN.rds'
 
 X            = read.table(data.file, header = TRUE, sep = ",", dec = ".", quote = "\"",stringsAsFactors = FALSE,
                           encoding = 'UTF-8')
@@ -178,3 +184,7 @@ write.csv(X_set,output.file)
 
 # Write a summary of the output to an rds file
 saveRDS(results,report.file,ascii=TRUE)
+
+
+# Clean up
+rm(list = ls())

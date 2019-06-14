@@ -9,25 +9,26 @@
 # 4. Entropy of the responses given the cues: E(R|C)
 #
 # Author: Simon De Deyne simon.dedeyne@adelaide.edu.au
-# Date: 2 October 2017
+# Last changed: 13 June 2019
 
-require(tidyverse)
-require(Matrix)
-require(pbapply)
-require(entropy)
+library('tidyverse')
+library('Matrix')
+library('pbapply')
+library('entropy')
 
 source('settings.R')
-results = list()
 source('./R/functions/importDataFunctions.R')
 source('./R/functions/networkFunctions.R')
 
-dataFile.SWOWEN           = './data/processed/SWOW-EN.R100.csv'
-results.file.SWOWEN.R1    = './output/cueStats.SWOW-EN.R1.csv'
-results.file.SWOWEN.R123  = './output/cueStats.SWOW-EN.R123.csv'
-report.file               = './output/reports/cueStats.SWOW-EN.rds'
+results = list()
+
+dataFile.SWOWEN           = './data/2018/processed/SWOW-EN.R100.csv'
+results.file.SWOWEN.R1    = './output/2018/cueStats.SWOW-EN.R1.csv'
+results.file.SWOWEN.R123  = './output/2018/cueStats.SWOW-EN.R123.csv'
+report.file               = './output/2018/reports/cueStats.SWOW-EN.rds'
 
 # Load the removed vertices from the strongly connected components
-components = readRDS('./output/reports/components.SWOW-EN.rds')
+components = readRDS('./output/2018/reports/components.SWOW-EN.rds')
 
 ## SWOW-R1 statistics
 X.R1              = importDataSWOW(dataFile.SWOWEN,'R1')

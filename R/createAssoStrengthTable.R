@@ -4,17 +4,21 @@
 #
 # Note: the data included with this script cannot be distributed without prior consent
 # Author: Simon De Deyne simon2d@gmail.com
-# Last changed: 20 February 2018
+# Last changed: 13 June 2019
+
+
+library('stringr')
+library('tidyverse')
+library('igraph')
+library('Matrix')
 
 source('settings.R')
-require(igraph)
-require(Matrix)
+source('./R/functions/importDataFunctions.R')
 
 outputR1.file       = './output/strength.SWOW-EN.R1.csv'
 outputR123.file     = './output/strength.SWOW-EN.R123.csv'
 
-setwd('/media/simon/Data/Dropbox/Scripts/R/SWOWGIT/complete/')
-source('./R/functions/importDataFunctions.R')
+
 
 # Import the dataset for R1
 dataFile          = './data/processed/SWOW-EN.R100.csv'

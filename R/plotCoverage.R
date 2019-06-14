@@ -1,11 +1,16 @@
-require(ggplot2)
-require(cowplot) # imports save_plot
-require(svglite)
+# Plot the coverage (% of tokens) again the number of word types
+#
+# Author: Simon De Deyne, simon2d@gmail.com
+# Last changed 13 June, 2019
+
+library('ggplot2')
+library('cowplot') # imports save_plot
+library('svglite')
 
 rm(list = ls())
 
-cueStats.R1 = read.csv('./output/cueStats.SWOW-EN.R1.csv')
-cueStats.R123 = read.csv('./output/cueStats.SWOW-EN.R123.csv')
+cueStats.R1 = read.csv('./output/2018/cueStats.SWOW-EN.R1.csv')
+cueStats.R123 = read.csv('./output/2018/cueStats.SWOW-EN.R123.csv')
 
 mR1   = median(cueStats.R1$coverage)
 mR123 = median(cueStats.R123$coverage)
@@ -32,5 +37,5 @@ p.R123 = ggplot(data=cueStats.R123,aes(cueStats.R123$coverage)) +
 
 
 p = plot_grid(p.R1, p.R123, labels = c("A", "B"))
-save_plot('./figures/responseCoverage.pdf',p, base_height = 4, base_width = 10)
-save_plot('./figures/responseCoverage.svg',p, base_height = 4, base_width = 10)
+save_plot('./figures/2018/responseCoverage.pdf',p, base_height = 4, base_width = 10)
+save_plot('./figures/2018/responseCoverage.svg',p, base_height = 4, base_width = 10)

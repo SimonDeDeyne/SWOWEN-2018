@@ -58,18 +58,16 @@
 #
 # Questions / comments: 
 # Simon De Deyne, simon2d@gmail.com
-# Last changed: 16/05/2018
+# Last changed: 12/06/2019
 #
 # See creataeRandomWalk.m for a more efficient version
 
-require(Matrix)
-require(tictoc)
-require(tidyverse)
-require(igraph)
+library('Matrix')
+library('tictoc')
+library('tidyverse')
+library('igraph')
 
 
-rm(list = ls())
-setwd("/media/simon/Data/Dropbox/Scripts/R/SWOWGIT/SWOWEN-2018/")
 source('./R/functions/importDataFunctions.R')
 source('./R/functions/networkFunctions.R')
 source('./R/functions/similarityFunctions.R')
@@ -82,7 +80,7 @@ source('./R/functions/similarityFunctions.R')
 alpha = 0.75
 
 # Load the data 
-dataFile.SWOWEN     = './data/processed/SWOW-EN.R100.csv'
+dataFile.SWOWEN     = './data/2018/processed/SWOW-EN.R100.csv'
 SWOW.R1             = importDataSWOW(dataFile.SWOWEN,'R1')
 
 # Generate the weighted graphs
@@ -94,6 +92,36 @@ tic()
 G$R1$RW             = weightMatrix(SWOW.R1,'RW',alpha)
 toc()
 
-# Compute the cosine similarity matrix
-S = cosineMatrix(G$R1$PPMI)
 
+# Compute the cosine similarity matrix
+S = cosineMatrix(G$R1$RW)
+
+write.csv(S,'./output/2018/S_RW.R1.csv')
+
+
+rm(list = ls())
+
+source('./R/functions/importDataFunctions.R')
+source('./R/functions/networkFunctions.R')
+source('./R/functions/similarityFunctions.R')
+
+alpha = 0.75
+
+# Load the data 
+dataFile.SWOWEN     = './data/2018/processed/SWOW-EN.R100.csv'
+SWOW.R123             = importDataSWOW(dataFile.SWOWEN,'R123')
+
+# Generate the weighted graphs
+G                   = list()
+G$R123$Strength       = weightMatrix(SWOW.R123,'strength')
+G$R123$PPMI           = weightMatrix(SWOW.R123,'PPMI')
+
+tic()
+G$R123$RW             = weightMatrix(SWOW.R123,'RW',alpha)
+toc()
+
+
+# Compute the cosine similarity matrix
+S = cosineMatrix(G$R123$RW)
+
+write.csv(S,'./output/2018/S_RW.R123.csv')

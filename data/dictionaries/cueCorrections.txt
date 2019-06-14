@@ -80,7 +80,6 @@ parmesan	Parmesan
 pass over	passover
 photoshop	Photoshop
 Police Officer	police officer
-POO	poo
 Poo	poo
 reddit	Reddit
 rhode island	Rhode Island

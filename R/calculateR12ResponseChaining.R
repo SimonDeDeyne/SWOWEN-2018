@@ -7,26 +7,27 @@
 # Jamil, T., Ly, A., Morey, R., Love, J., Marsman, M., & Wagenmakers, E.-J. (2017). Default
 # Gunel and Dickey Bayes factors for contingency tables. Manuscript submitted for publication.
 #
-# Outstanding issues: script slows down, might be some looping / memory issue
+# Outstanding issues: script runs extremely slow, might be some looping / memory issue
+#
 # Author: Simon De Deyne, simon2d@gmail.com
-# Last changed 2 February, 2018
+# Last changed 13 June, 2019
 
-require(tidyverse)
-require(BayesFactor)
-require(pbapply)
+library('tidyverse')
+library('BayesFactor')
+library('pbapply')
 
 rm(list = ls())
 source('./R/functions/importDataFunctions.R')
 
-dataFile        = './data/processed/SWOW-EN.R100.csv'
-outputFile      = './output/responseR12ChainingSWOW-EN.csv'
-summaryFile     = './output/responseR12ChainingSummary.csv'
+dataFile        = './data/2018/processed/SWOW-EN.R100.csv'
+outputFile      = './output/2018/responseR12ChainingSWOW-EN.csv'
+summaryFile     = './output/2018/responseR12ChainingSummary.csv'
 response        = 'R123'
 X               = importDataSWOW(dataFile,response)
 X               = X %>% filter(complete.cases(response),RPOS %in% c('R1','R2')) %>% select(participantID,cue,response,RPOS)
 
 # co-worker and coworker lead to identical responses for 1 pp who happened to have
-# been presented these results. Remove
+# been presented these cues. Remove to avoid issues
 X = X[-c(324232,1507272), ]
 X = spread(X,RPOS,response)
 
@@ -93,6 +94,7 @@ for(c in 1:length(cues)){
   res = calculateChaining(tt)
   result = rbind(result,res)
   }
+
 end.time <- Sys.time()
 time.taken <- end.time - start.time
 time.taken

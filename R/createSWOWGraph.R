@@ -11,23 +11,24 @@
 #
 # Note: the data included with this script cannot be distributed without prior consent
 # Author: Simon De Deyne simon2d@gmail.com
-# Last changed: 5 July 2018
+# Last changed: 13 June 2019
 
-source('settings.R')
-require(igraph)
-require(Matrix)
+
+library('igraph')
+library('Matrix')
 
 results = list()
 
-output.file         = './output/adjacencyMatrices/SWOW-EN.'
-report.file         = './output/reports/components.SWOW-EN.rds'
+output.file         = './output/2018/adjacencyMatrices/SWOW-EN.'
+report.file         = './output/2018/reports/components.SWOW-EN.rds'
 
+source('settings.R')
 source('./R/functions/importDataFunctions.R')
 source('./R/functions/networkFunctions.R')
 
 
 # Import the dataset for R1
-dataFile          = './data/processed/SWOW-EN.R100.csv'
+dataFile          = './data/2018/processed/SWOW-EN.R100.csv'
 response          = 'R1' # Options: R1, R2, R3 or R123
 X.R1              = importDataSWOW(dataFile,response)
 

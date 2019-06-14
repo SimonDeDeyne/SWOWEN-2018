@@ -1,10 +1,16 @@
-require(tidyverse)
-require(svglite)
-require(zipfR)
+# Plot vocabulary growth curves for R1 and R123 responses
+#
+# Author: Simon De Deyne, simon2d@gmail.com
+# Last changed 13 June, 2019
+
+
+library('tidyverse')
+library('svglite')
+library('zipfR')
 
 rm(list = ls())
 source('./R/functions/importDataFunctions.R')
-data.file   = './data/processed/SWOW-EN.R100.csv'
+data.file   = './data/2018/processed/SWOW-EN.R100.csv'
 
 
 # Derive the vocabulary growth curve
@@ -61,7 +67,7 @@ R1.fzm.vgc    = lnre.vgc(R1.fzm, (1:n.R1) * ceiling(k/n.R1))
 R123.fzm.vgc  = lnre.vgc(R123.fzm, (1:n.R123) * ceiling(k/n.R123))
 
 # Check the legend
-svglite('./figures/VocGrowth.svg',width=8,height=6)
+svglite('./figures/2018/VocGrowth.svg',width=8,height=6)
 plot(R1.fzm.vgc,R1.vgc,R123.fzm.vgc,R123.vgc, N0=c(N(R1.fzm),N(R123.fzm)),
      legend = c('Zipf-Mandelbrot R1','Observed R1','Zipf-Mandelbrot  R123','Observed R123'),bw = TRUE,xlab = "Number of tokens",ylab = "Number of types")
 dev.off()

@@ -102,3 +102,6 @@ Two files are of importance:
 
 The spelling list is merged with [SUBTLEX-US](https://www.ugent.be/pp/experimentele-psychologie/en/research/documents/subtlexus) and words from the [VARCON](https://github.com/en-wl/wordlist/tree/master/varcon) list to obtain an English lexicon file. This file is used check responses at the individual level and remove participants who provide predominantly non-English responses in the [preprocessData.R](https://github.com/SimonDeDeyne/SWOWEN-2018/blob/master/R/preprocessData.R) script.
 
+
+## Updates
+* 13/06/2019 Use of `here` library to reference paths in scripts 

@@ -1,18 +1,23 @@
 # Create a word list from spelling corrections, SUBTLEX and VARCON project
 # Custom corrections are included as well as a custom list with proper nouns and acronyms
+#
+# Author: Simon De Deyne, simon2d@gmail.com
+# Last changed: 13 June 2019
+
+library('tidyverse')
 
 # Word list with SUBTLEX (min freq = 2) and VARCON
-varcon.file     = './dictionaries/SUBTLEXFreqMIN2VARCON.txt'
+varcon.file     = './data/dictionaries/SUBTLEXFreqMIN2VARCON.txt'
 
 # Proper nouns, Acronyms
-proper.file     = './dictionaries/EnglishProperNames.txt'
+proper.file     = './data/dictionaries/EnglishProperNames.txt'
 
 # Spelling corrections
-spelling.file   = './dictionaries/EnglishCustomDict.txt'
+spelling.file   = './data/dictionaries/EnglishCustomDict.txt'
 
 
 # Output file that combines the various list of valid lexical entries
-output.file     = './dictionaries/wordlist.txt'
+output.file     = './data/dictionaries/wordlist.txt'
 
 X.varcon        = read.table(varcon.file, header = TRUE, sep=",", dec=".", quote = "\"",stringsAsFactors = FALSE,
                              encoding = 'UTF-8')

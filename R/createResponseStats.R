@@ -4,16 +4,20 @@
 # Save the summary statistics to be included in later report.
 #
 # Author: Simon De Deyne simon2d@gmail.com
-# Date: 5 July 2018
+# Last changed: 13 June 2019
+
+library('stringr')
+library('tidyverse')
 
 source('settings.R')
-results = list()
-
 source('./R/functions/importDataFunctions.R')
 
-data.file           = './data/processed/SWOW-EN.R100.csv'
-output.file         = './output/responseStats.SWOW-EN.csv'
-report.file         = './output/reports/responseStats.SWOW-EN.rds'
+
+data.file           = './data/2018/processed/SWOW-EN.R100.csv'
+output.file         = './output/2018/responseStats.SWOW-EN.csv'
+report.file         = './output/2018/reports/responseStats.SWOW-EN.rds'
+
+results = list()
 
 # Response frequencies for SWOW-EN R123
 response            = 'R123'
@@ -93,6 +97,4 @@ saveRDS(results,report.file,ascii=TRUE)
 
 # Clean up
 rm(list = ls())
-
-
 
