@@ -69,7 +69,7 @@ In many cases, this preprocessed data is used to derive the associative strength
 
 
 ## Graphs
-Use [createSWOWENGraph.R](https://github.com/SimonDeDeyne/SWOWEN-2018/blob/master/R/createSWOWENGraph.R) to extract the largest strongly connected component  for graphs based on the first response (R1) or all responses (R123). The results are written to [output/adjacencyMatrices](https://github.com/SimonDeDeyne/SWOWEN-2018/blob/master/output/adjacencyMatrices) and consist of a file with labels and a sparse file consisting of three values corresponding to row- and column-indices followed by the association frequencies.
+Use [createSWOWGraph.R](https://github.com/SimonDeDeyne/SWOWEN-2018/blob/master/R/createSWOWGraph.R) to extract the largest strongly connected component  for graphs based on the first response (R1) or all responses (R123). The results are written to [output/adjacencyMatrices](https://github.com/SimonDeDeyne/SWOWEN-2018/blob/master/output/adjacencyMatrices) and consist of a file with labels and a sparse file consisting of three values corresponding to row- and column-indices followed by the association frequencies.
 In most cases, associative frequencies will need to be converted to associative strengths by dividing with the sum of all strengths for a particular cue.
 Vertices that are not part of the largest connected component are listed in a report in the `output/reports` subdirectory.
 
